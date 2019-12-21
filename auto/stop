@@ -1,0 +1,6 @@
+#!/bin/bash -eu
+
+cd $(dirname $0)/..
+
+#This cleans the sync-service like docker-sync clean and also removed the application stack like docker-compose down.
+docker-sync-stack clean

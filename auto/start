@@ -1,0 +1,6 @@
+#!/bin/bash -eu
+
+cd $(dirname $0)/..
+
+#see https://docker-sync.readthedocs.io/en/latest/getting-started/commands.html
+docker-sync-stack start
