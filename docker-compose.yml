@@ -23,7 +23,11 @@ services:
       - '8000:80'
       - 443:443
     restart: always
-    volumes: ['./app/wp-content:/var/www/html']
+    volumes:
+      - './app/wordpress/wp-admin:/var/www/html/wp-admin'
+      - './app/wordpress/wp-inclues:/var/www/html/wp-inclues'
+      - 'wordpress-themes:/var/www/html/wp-content/themes/:nocopy'
+      - 'wordpress-plugins:/var/www/html/wp-content/plugins/:nocopy'
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
@@ -33,4 +37,8 @@ services:
 networks:
   wpsite:
 volumes:
-  db_data:    
+  db_data:
+  wordpress-themes:
+    external: true
+  wordpress-plugins:
+    external: true

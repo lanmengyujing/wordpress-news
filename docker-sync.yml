@@ -1,0 +1,18 @@
+version: "2"
+
+options:
+  verbose: true
+
+syncs:
+  wordpress-themes:
+    src: './app/wordpress/wp-content/themes'
+    monit_enable: true
+    # increase tolerance of high cpu if regular syncing uses a lot cpu
+    monit_interval: 10
+    monit_high_cpu_cycles: 6
+  wordpress-plugins:
+    src: './app/wordpress/wp-content/plugins'
+    monit_enable: true
+    # increase tolerance of high cpu if regular syncing uses a lot cpu
+    monit_interval: 10
+    monit_high_cpu_cycles: 6
