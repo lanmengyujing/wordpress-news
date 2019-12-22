@@ -47,5 +47,12 @@ add_action( 'wp_enqueue_scripts', 'tsc_scripts' );
 function tsc_scripts() {
     if ( is_single() ){
         wp_enqueue_script( 'tsc-js', get_theme_file_uri('JS/previous.ajax.js'), array('jquery'), '0.1', true );
+        wp_localize_script('tsc-js', 'postdata', 
+            array(
+                "post_id"=>get_the_ID(),
+                "theme_uri" => get_stylesheet_directory_uri(),
+                "rest_url" => rest_url('wp/v2/')
+            )
+         );
     }
 }
