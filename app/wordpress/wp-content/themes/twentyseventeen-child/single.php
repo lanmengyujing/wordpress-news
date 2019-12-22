@@ -20,8 +20,10 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-				var_dump(get_previous_post());
-				die();
+				
+				$previous_post = get_previous_post();
+				echo get_permalink($previous_post);
+
 				get_template_part( 'template-parts/post/content', get_post_format() );
 
 				// If comments are open or we have at least one comment, load up the comment template.
