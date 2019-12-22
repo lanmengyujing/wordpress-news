@@ -25,7 +25,7 @@ services:
     restart: always
     volumes:
       - './app/wordpress/wp-admin:/var/www/html/wp-admin'
-      - './app/wordpress/wp-inclues:/var/www/html/wp-inclues'
+      - './app/wordpress/wp-includes:/var/www/html/wp-includes'
       - 'wordpress-themes:/var/www/html/wp-content/themes/:nocopy'
       - 'wordpress-plugins:/var/www/html/wp-content/plugins/:nocopy'
     environment:
