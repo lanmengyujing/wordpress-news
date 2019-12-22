@@ -39,3 +39,13 @@ function tschild_get_previous_post_title() {
 function tschild_get_previous_post_link() {
     return get_permalink( get_previous_post()->ID );
 }
+
+/**
+ * Enqueue JavaScript.
+ */
+add_action( 'wp_enqueue_scripts', 'tsc_scripts' );
+function tsc_scripts() {
+    if ( is_single() ){
+        wp_enqueue_script( 'tsc-js', get_theme_file_uri('JS/previous.ajax.js'), array('jquery'), '0.1', true );
+    }
+}
