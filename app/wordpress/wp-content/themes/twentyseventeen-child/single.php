@@ -34,6 +34,9 @@ while ( have_posts() ) : the_post();
 				<a href="<?php echo get_permalink($previous_post->ID); ?>" data-id="<?php echo $previous_post->ID; ?>">
 					<?php echo $previous_post->post_title; ?>
 				</a>
+				<div class="ajax-loader">
+					<img src="<?php echo get_theme_file_uri('JS/spinner.svg'); ?>" width="32" height="32" />
+				</div>
 			</div>
 		</div>
 	</nav>
