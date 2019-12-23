@@ -18,6 +18,8 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<h1>Delicous food</h1>
+				<p>Good food bring happy, laugh, enjoyment for your life	</p>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
