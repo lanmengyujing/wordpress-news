@@ -1,0 +1,22 @@
+/*
+ Theme Name:   Topsy Turvy Cake Design
+ Theme URI:    https://speakinginbytes.com
+ Description:  Twenty Nineteen Child Theme
+ Author:       Patrick Rauland
+ Author URI:   https://speakinginbytes.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentynineteenchild
+*/
+
+.site-description {
+    color: #b5b5b5;
+    font-style: italic;
+}
+
+.ingredients li {
+    font-family: Arial, Helvetica, sans-serif;
+}
