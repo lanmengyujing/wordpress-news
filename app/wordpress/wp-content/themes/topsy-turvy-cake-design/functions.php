@@ -12,3 +12,12 @@ function my_theme_enqueue_styles() {
 function twentynineteen_posted_by() {
   printf('');
 }
+
+function add_secondary_menu(){
+  register_nav_menus(
+    array(
+      'menu-2' => __( 'Secondary', 'twentynineteen' ),
+    )
+  );
+}
+add_action( 'after_setup_theme', "add_secondary_menu");
