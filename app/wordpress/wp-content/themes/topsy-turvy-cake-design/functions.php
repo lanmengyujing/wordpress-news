@@ -20,4 +20,13 @@ function add_secondary_menu(){
     )
   );
 }
-add_action( 'after_setup_theme', "add_secondary_menu");
+
+function hide_widgets(){
+  //   remove_action( 'widgets_init', 'twentynineteen_widgets_init' );
+}
+
+function modify_parent_functionalities(){
+  add_secondary_menu();
+  hide_widgets();
+}
+add_action( 'after_setup_theme', "modify_parent_functionalities");

@@ -7,7 +7,7 @@
  * @since 1.0.0
  */
 
-if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+if ( is_active_sidebar( 'sidebar-1' ) & !is_singular() ) : ?>
 
 	<aside class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'twentynineteen' ); ?>">
 		<?php
