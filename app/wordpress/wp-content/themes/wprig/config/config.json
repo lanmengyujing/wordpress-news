@@ -1,1 +1,15 @@
-{}
+{
+  "theme": {
+    "slug": "wp-rig",
+    "name": "WP Rig",
+    "author": "Jing Liu"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "localhost:8000",
+      "bypassPort": "8181",
+      "https": false
+    }
+  }
+}
