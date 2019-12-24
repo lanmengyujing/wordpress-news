@@ -7,6 +7,8 @@ function my_theme_enqueue_styles() {
       array('parent-style'),
       wp_get_theme()->get('Version')
     );
+
+    wp_enqueue_style( 'customer-font-child-theme', 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap' );
 }
 
 function twentynineteen_posted_by() {
