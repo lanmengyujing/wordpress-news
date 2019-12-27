@@ -1,3 +1,5 @@
 .idea
 .docker-sync
 .DS_Store
+/node_module
+/vendor

@@ -2,4 +2,5 @@
     "prettier.stylelintIntegration": true,
     "prettier.eslintIntegration": true,
     "editor.formatOnSave": true,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
 }
