@@ -19,6 +19,10 @@ require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-callbacks.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
 
+add_action( 'admin_enqueue_scripts', 'my_plugin_enqueue_styles' );
+function my_plugin_enqueue_styles() {
+	wp_enqueue_style( 'myplugin-style', plugin_dir_url(dirname(__FILE__)) . 'myplugin/admin/css/settings-fields.css', array(), false );
+}
 
 function myplugin_options_default() {
 	return array(
