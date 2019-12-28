@@ -2,5 +2,7 @@
     "prettier.stylelintIntegration": true,
     "prettier.eslintIntegration": true,
     "editor.formatOnSave": true,
+    "phpcs.enable": true,
+    "phpcs.standard": "WordPress",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
 }
