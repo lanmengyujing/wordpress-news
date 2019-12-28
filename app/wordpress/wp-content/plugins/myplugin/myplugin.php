@@ -31,11 +31,44 @@ function myplugin_register_settings() {
 		'myplugin_callback_validate_options' 
 	); 
 
+	  /*
+	add_settings_section( 
+		string   $id, 
+		string   $title, 
+		callable $callback, 
+		string   $page
+	);
+	*/
+	add_settings_section( 
+		'myplugin_section_login', 
+		'Customize Login Page', 
+		'myplugin_callback_section_login', 
+		'myplugin'
+	);
+
+	add_settings_section( 
+		'myplugin_section_admin', 
+		'Customize Admin Area', 
+		'myplugin_callback_section_admin', 
+		'myplugin'
+	);
 }
 // validate plugin settings
 function myplugin_validate_options($input) {
 	// todo: add validation functionality..
 	return $input;
+	
+}
+
+// callback: login section
+function myplugin_callback_section_login() {
+	echo '<p>These settings enable you to customize the WP Login screen.</p>';
+	
+}
+
+// callback: admin section
+function myplugin_callback_section_admin() {
+	echo '<p>These settings enable you to customize the WP Admin Area.</p>';
 	
 }
 
