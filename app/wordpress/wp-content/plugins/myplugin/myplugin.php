@@ -18,6 +18,7 @@ require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-callbacks.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-validate.php';
+require_once plugin_dir_path( __FILE__ ) . 'includes/core-functions.php';
 
 add_action( 'admin_enqueue_scripts', 'my_plugin_enqueue_styles' );
 function my_plugin_enqueue_styles() {
@@ -28,23 +29,6 @@ function my_plugin_enqueue_styles() {
 		false
 	);
 
-}
-
-add_action( 'login_enqueue_scripts', 'myplugin_login_enqueue_styles' );
-function myplugin_login_enqueue_styles(){
-	wp_enqueue_style(
-		'myplugin-login-style',
-		plugin_dir_url(dirname(__FILE__)) . 'myplugin/public/css/myplugin-login.css', 
-		array(),
-		false
-	);
-	wp_enqueue_script( 
-		'myplugin-login-script',
-		plugin_dir_url(dirname(__FILE__)) . 'myplugin/public/css/myplugin-login.js', 
-		array(),
-		false,
-		true
-	);
 }
 
 function myplugin_options_default() {
