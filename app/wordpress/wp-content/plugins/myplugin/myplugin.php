@@ -13,6 +13,15 @@ if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+
+// load text domain
+function myplugin_load_textdomain() {
+
+	load_plugin_textdomain( 'myplugin', false, plugin_dir_path( __FILE__ ) . 'languages/' );
+
+}
+add_action( 'plugins_loaded', 'myplugin_load_textdomain' );
+
 require_once plugin_dir_path( __FILE__ ) . 'admin/admin-menu.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-page.php';
 require_once plugin_dir_path( __FILE__ ) . 'admin/settings-register.php';
