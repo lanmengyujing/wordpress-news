@@ -29,14 +29,14 @@ function myplugin_register_settings() {
 	*/
 	add_settings_section( 
 		'myplugin_section_login', 
-        esc_html__('Customize Login Page', 'myplugin'), 
+    esc_html__('Customize Login Page', 'myplugin'), 
 		'myplugin_callback_section_login', 
 		'myplugin'
 	);
 
 	add_settings_section( 
-        'myplugin_section_admin', 
-        esc_html__('Customize Admin Area', 'myplugin'), 
+    'myplugin_section_admin', 
+    esc_html__('Customize Admin Area', 'myplugin'), 
 		'myplugin_callback_section_admin', 
 		'myplugin'
 	);
