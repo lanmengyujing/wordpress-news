@@ -7,15 +7,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // callback: login section
 function myplugin_callback_section_login() {
-	echo '<p>These settings enable you to customize the WP Login screen.</p>';
+	echo '<p>'. esc_html__('These settings enable you to customize the WP Login screen.', 'myplugin') .'</p>';
 }
 
 
 
 // callback: admin section
 function myplugin_callback_section_admin() {
-	echo '<p>These settings enable you to customize the WP Admin Area.</p>';
-
+	echo '<p>'. esc_html__('These settings enable you to customize the WP Admin Area.', 'myplugin') .'</p>';
 }
 
 // callback: text field
@@ -44,8 +43,8 @@ function myplugin_callback_field_radio( $args ) {
 	$selected_option = isset( $options[$id] ) ? sanitize_text_field( $options[$id] ) : '';
 	
 	$radio_options = array(
-		'enable'  => 'Enable custom styles',
-		'disable' => 'Disable custom styles'
+		'enable'  => esc_html__('Enable custom styles', 'myplugin'),
+		'disable' => esc_html__('Disable custom styles', 'myplugin')
 	);
 
 	foreach ($radio_options as $key => $label) {
@@ -100,14 +99,14 @@ function myplugin_callback_field_select( $args ) {
 	$selected_option = isset( $options[$id] ) ? sanitize_text_field( $options[$id] ) : '';
 	
 	$select_options = array(
-		'default'   => 'Default',
-		'light'     => 'Light',
-		'blue'      => 'Blue',
-		'coffee'    => 'Coffee',
-		'ectoplasm' => 'Ectoplasm',
-		'midnight'  => 'Midnight',
-		'ocean'     => 'Ocean',
-		'sunrise'   => 'Sunrise',
+		'default'   => esc_html__('Default',   'myplugin'),
+		'light'     => esc_html__('Light',     'myplugin'),
+		'blue'      => esc_html__('Blue',      'myplugin'),
+		'coffee'    => esc_html__('Coffee',    'myplugin'),
+		'ectoplasm' => esc_html__('Ectoplasm', 'myplugin'),
+		'midnight'  => esc_html__('Midnight',  'myplugin'),
+		'ocean'     => esc_html__('Ocean',     'myplugin'),
+		'sunrise'   => esc_html__('Sunrise',   'myplugin'),
 	);
 	
 	echo '<select id="myplugin_options_'. $id .'" name="myplugin_options['. $id .']">';

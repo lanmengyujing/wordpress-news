@@ -19,8 +19,8 @@ function myplugin_add_toplevel_menu() {
 	*/
 	
 	add_menu_page(
-		'MyPlugin Settings Page Title',
-		'MyPlugin',
+		esc_html__('MyPlugin Settings', 'myplugin'),
+		esc_html__('MyPlugin', 'myplugin'),
 		'manage_options',
 		'myplugin',
 		'myplugin_display_settings_page',
@@ -45,8 +45,8 @@ function myplugin_add_sublevel_menu() {
 	
 	add_submenu_page(
 		'options-general.php',
-		'MyPlugin Settings',
-		'MyPlugin',
+		esc_html__('MyPlugin Settings', 'myplugin'),
+		esc_html__('MyPlugin', 'myplugin'),
 		'manage_options',
 		'myplugin',
 		'myplugin_display_settings_page'

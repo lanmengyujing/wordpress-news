@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-28 23:54+0000\n"
+"PO-Revision-Date: 2019-12-28 23:56+0000\n"
+"Last-Translator: Jing Liu <jing.liu@rea-group.com>\n"
+"Language-Team: 简体中文\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#. Description of the plugin
+msgid "A plugin for practice"
+msgstr ""
+
+#: admin/settings-callbacks.php:104
+msgid "Blue"
+msgstr ""
+
+#: admin/settings-callbacks.php:105
+msgid "Coffee"
+msgstr ""
+
+#: admin/settings-register.php:39
+msgctxt ""
+"定制化的管理区域\n"
+msgid "Customize Admin Area"
+msgstr "定制化的管理区域"
+
+#: admin/settings-register.php:32
+msgctxt "定制化的登录页面"
+msgid "Customize Login Page"
+msgstr "定制化的登录页面"
+
+#: admin/settings-callbacks.php:102
+msgid "Default"
+msgstr ""
+
+# ji
+#: admin/settings-callbacks.php:47
+msgid "Disable custom styles"
+msgstr "禁用定制化样式"
+
+#: admin/settings-callbacks.php:106
+msgid "Ectoplasm"
+msgstr ""
+
+#: admin/settings-callbacks.php:46
+msgid "Enable custom styles"
+msgstr "启用定制化样式"
+
+#. Author URI of the plugin
+msgid "http://localhost.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Jing Liu"
+msgstr ""
+
+#: admin/settings-callbacks.php:103
+msgid "Light"
+msgstr ""
+
+#: admin/settings-callbacks.php:107
+msgid "Midnight"
+msgstr ""
+
+#: myplugin.php:39
+msgid "My custom message"
+msgstr ""
+
+#. Name of the plugin
+msgid "My Plugin"
+msgstr ""
+
+#: admin/admin-menu.php:23 admin/admin-menu.php:49
+msgid "MyPlugin"
+msgstr ""
+
+#: admin/admin-menu.php:22 admin/admin-menu.php:48
+msgid "MyPlugin Settings"
+msgstr "MyPlugin设置"
+
+#: admin/settings-callbacks.php:108
+msgid "Ocean"
+msgstr ""
+
+#: myplugin.php:37
+msgid "Powered by WordPress"
+msgstr ""
+
+#: myplugin.php:40
+msgid "Special message for users"
+msgstr ""
+
+#: admin/settings-callbacks.php:109
+msgid "Sunrise"
+msgstr ""
+
+#: admin/settings-callbacks.php:17
+msgid "These settings enable you to customize the WP Admin Area."
+msgstr "这些设置让你轻松定制化WP管理区域"
+
+#: admin/settings-callbacks.php:10
+msgid "These settings enable you to customize the WP Login screen."
+msgstr "这些设置让你轻松定制化WP登录页面"

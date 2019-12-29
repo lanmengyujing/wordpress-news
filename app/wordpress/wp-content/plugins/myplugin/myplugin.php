@@ -34,10 +34,10 @@ function my_plugin_enqueue_styles() {
 function myplugin_options_default() {
 	return array(
 		'custom_url'     => 'https://wordpress.org/',
-		'custom_title'   => 'Powered by WordPress',
+		'custom_title'   => esc_html__('Powered by WordPress', 'myplugin'),
 		'custom_style'   => 'disable',
-		'custom_message' => '<p class="custom-message">My custom message</p>',
-		'custom_footer'  => 'Special message for users',
+		'custom_message' => '<p class="custom-message">'. esc_html__('My custom message', 'myplugin') .'</p>',
+		'custom_footer'  => esc_html__('Special message for users', 'myplugin'),
 		'custom_toolbar' => false,
 		'custom_scheme'  => 'default',
 	);
