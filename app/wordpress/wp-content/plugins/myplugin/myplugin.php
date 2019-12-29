@@ -51,3 +51,14 @@ function myplugin_options_default() {
 		'custom_scheme'  => 'default',
 	);
 }
+
+
+// remove options on uninstall
+function myplugin_on_uninstall() {
+
+	if ( ! current_user_can( 'activate_plugins' ) ) return;
+
+	delete_option( 'myplugin_options' );
+
+}
+register_uninstall_hook( __FILE__, 'myplugin_on_uninstall' );
