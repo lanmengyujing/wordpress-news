@@ -20,10 +20,10 @@ function myplugin_delete_custom_field( $content ) {
 		)
 	*/
 
-	return delete_post_meta( get_the_ID(), 'weekday' );
+	return $content. delete_post_meta( get_the_ID(), 'weekday' );
 
 }
-// add_filter( 'the_content', 'myplugin_delete_custom_field' );
+add_filter( 'the_content', 'myplugin_delete_custom_field' );
 
 
 // update custom field for each post
@@ -38,10 +38,10 @@ function myplugin_update_custom_field( $content ) {
 		)
 	*/
 
-	return update_post_meta( get_the_ID(), 'mood', 'full of joy', 'happy' );
+	return $content. update_post_meta( get_the_ID(), 'mood', 'full of joy', 'happy' );
 
 }
-// add_filter( 'the_content', 'myplugin_update_custom_field' );
+add_filter( 'the_content', 'myplugin_update_custom_field' );
 
 
 
