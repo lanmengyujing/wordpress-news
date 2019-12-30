@@ -18,25 +18,17 @@
 
 			// define url
 			var url = $('#url').val();
-
-			console.log('====================================');
-			console.log("url", url);
-			console.log('====================================');
 			// submit the data
-			$.post(ajaxurl, {
-
+			$.ajax({
+				url: url,
 				nonce: ajax_admin.nonce,
-				action: 'admin_hook',
-				url: url
+				success: function (res, status, xhr) {
+					// log data
+					console.log(res);
 
-			}, function (data) {
-
-				// log data
-				console.log(data);
-
-				// display data
-				$('.ajax-response').html(data);
-
+					// display data
+					$('.ajax-response').html(status);
+				}
 			});
 
 		});

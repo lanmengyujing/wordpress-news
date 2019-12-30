@@ -90,7 +90,7 @@ function ajax_admin_handler() {
 
 }
 // ajax hook for logged-in users: wp_ajax_{action}
-add_action( 'wp_ajax_admin_hook', 'ajax_admin_handler' );
+// add_action( 'wp_ajax_admin_hook', 'ajax_admin_handler' );
 
 
 
