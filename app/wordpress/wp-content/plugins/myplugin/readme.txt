@@ -1,6 +1,6 @@
 === Plugin Name ===
 
-Plugin Name:  MyPlugin
+Plugin Name:  My Plugin
 Description:  Example plugin for the video tutorial series, "WordPress: Plugin Development", available at Lynda.com.
 Plugin URI:   https://profiles.wordpress.org/myplugin
 Author:       Jing Liu

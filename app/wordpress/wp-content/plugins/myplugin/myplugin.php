@@ -6,6 +6,8 @@ Version:           0.0.1
 Author:            Jing Liu
 Author URI:        http://localhost.com/
 License:           GPLv2 or later
+Text Domain:       myplugin
+Domain Path:      /languages
 */
 
 // exit if file is called directly
@@ -13,12 +15,9 @@ if ( !defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-
 // load text domain
 function myplugin_load_textdomain() {
-
-	load_plugin_textdomain( 'myplugin', false, plugin_dir_path( __FILE__ ) . 'languages/' );
-
+	load_plugin_textdomain( 'myplugin', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'myplugin_load_textdomain' );
 
