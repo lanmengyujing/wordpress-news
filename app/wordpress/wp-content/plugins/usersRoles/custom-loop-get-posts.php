@@ -50,6 +50,7 @@ function custom_loop_shortcode_get_posts( $atts ) {
 	// complete output variable
 	$output .= '</ul>';
 	
+	// $custom_html = '<div class="custom_short_code_example" data-orderby="'. $orderby .'">My Test</div>';
 	// return output
 	return $output;
 	
